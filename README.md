@@ -17,11 +17,13 @@ It is better to use a symbol from the 1 - 50 position by capitalization and mini
 
 I made an exe file for several bot configurations:
 1. pip install pyinstaller
-2. In the command line, go to the directory with the bot, for example, cd c:\1\
+2. In the command line, go to the directory with the bot, for example, cd c:\1
 3. pyinstaller --onefile bbdq_h_TRX_30.py
 
 pyinstaller --onefile bbdq_h_BTC_30.py
+
 pyinstaller --onefile bbdq_h_ETH_30.py
+
 pyinstaller --onefile bbdq_h_TRX_30.py
 
 Sometimes the exchange and the bot lose connection or there is an error, it is good to restart the bot (use the task scheduler).

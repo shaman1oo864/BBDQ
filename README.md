@@ -16,8 +16,11 @@ I do not recommend leverage higher than 5x.
 It is better to use a symbol from the 1 - 50 position by capitalization and minimum volatility.
 
 Need install:
+
 pip install ccxt
+
 pip install numpy
+
 pip install pandas
 
 I made an exe file for several bot configurations:

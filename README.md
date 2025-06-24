@@ -30,24 +30,41 @@ Sometimes the exchange and the bot lose connection or there is an error, it is g
 I use a bat file that runs the bot:
 
 @echo off
+
 set imagename=python.exe
+
 tasklist /fi "IMAGENAME eq %imagename%" | find /i "%imagename%"
+
 if not errorlevel 1 (
+
 echo Python is running
+
 ) else (
+
 echo Python is NOT running
+
 cd c:\1
+
 python c:\1\bbdq_subak.py
+
 )
 
 set imagename=bbdq_h_BTC_30.exe
+
 tasklist /fi "IMAGENAME eq %imagename%" | find /i "%imagename%"
+
 if not errorlevel 1 (
+
 echo bbdq_h_BTC_30.exe is running
+
 ) else (
+
 echo bbdq_h_BTC_30.exe is NOT running
+
 cd c:\1
+
 c:\1\bbdq_h_BTC_30.exe
+
 )
 
 The bot probably has profit and pleasures.

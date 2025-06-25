@@ -53,7 +53,7 @@ echo Python is NOT running
 
 cd c:\1
 
-python c:\1\bbdq_subak.py
+python c:\1\bbdq_h_TRX_30.py
 
 )
 
@@ -75,14 +75,20 @@ c:\1\bbdq_h_BTC_30.exe
 
 )
 
+I'm sure, ccxt can use ANY exchange.
+
 The bot probably has profit and pleasures.
+
 You can thank here:
 
-TRX address
+TRX address:
+
 THWTRuhMbsE42P8q9zSvioMqusiBCb5GQd
 
-TON
+TON address:
+
 UQBwW5eZ_kNFPBiCgpbm8iMzydTlijwmDB3UAxBj9E8oGIBe
 
-SOL
+SOL address:
+
 GbACHstTsSnEARWykTDrRi2ES31d166z7oDHprWm3k9i

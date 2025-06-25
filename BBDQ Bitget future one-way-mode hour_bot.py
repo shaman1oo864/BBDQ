@@ -25,7 +25,7 @@ kkb = 1					# Correction Factor for buying
 kks = 1					# Correction Factor for selling
 
 TS = exchange.fetchTime() 				# Exchange Time
-since = TS - ( period * tf * 60 * 60 * 1000) 		# Period * tf * minute ** seconds * milliseconds
+since = TS - ( period * tf * 60 * 60 * 1000) 		# Period * tf * minute * seconds * milliseconds
 balance = exchange.fetch_balance()
 ticker = exchange.fetch_ticker(symbol)
 latest_price = ticker['bid']

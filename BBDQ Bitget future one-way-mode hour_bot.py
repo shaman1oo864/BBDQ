@@ -12,20 +12,20 @@ exchange = ccxt.bitget({
 })
 
 symbol = 'TRX/USDT:USDT'
-b = 6 					  # USDT per trade (need more than 5 USDT)
-q = 0 					  # number of contracts per trade, the bot will count below
+b = 6 					# USDT per trade (need more than 5 USDT)
+q = 0 					# number of contracts per trade, the bot will count below
 comma = 0			  	# digits after the decimal point in high prices to determine the minimum contract.
-						      # for example, the minimum amount to open is 0.0001 BTC, we write 4.
+					# for example, the minimum amount to open is 0.0001 BTC, we write 4.
 period = 24				# period of Bollinger bands 3 14 20 24 or other
 d = 2				    	# deviation 2 or 3
-timeframe = '1h'	# Candle interval. One of the values ​​1h, 2h, 3h, 4h, 6h
+timeframe = '1h'			# Candle interval. One of the values ​​1h, 2h, 3h, 4h, 6h
 tf = 1				  	# tf = timeframe ( 1 = '1h' )
-last_time = ''		# will be used for calculations later.
-kkb = 1					  # Correction Factor for buying
-kks = 1					  # Correction Factor for selling
+last_time = ''				# will be used for calculations later.
+kkb = 1					# Correction Factor for buying
+kks = 1					# Correction Factor for selling
 
 TS = exchange.fetchTime() 				# Exchange Time
-since = TS - ( period * tf * 60 * 60 * 1000) # Period * tf * minute ** seconds * milliseconds
+since = TS - ( period * tf * 60 * 60 * 1000) 		# Period * tf * minute ** seconds * milliseconds
 balance = exchange.fetch_balance()
 ticker = exchange.fetch_ticker(symbol)
 latest_price = ticker['bid']

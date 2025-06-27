@@ -89,9 +89,12 @@ while True:
 		bollinger_band_high_values.append(bb_high)
 		bollinger_band_low_values.append(bb_low)
 		# print(current_time.strftime("%Y-%m-%d %H:%M"), "bb_high =", round(bb_high, 5), "latest_price =",latest_price, "bb_low =", round(bb_low, 5))
-		Posit = exchange.fetchPosition (symbol) # Leveling the number of contracts.
+		Posit = exchange.fetchPosition(symbol) # Leveling the number of contracts.
 		pos = Posit['info']
-		q_old = int(pos.get('total'))
+		if pos.get('total') == None :
+			q_old = 0
+		else:
+			q_old = float(pos.get('total'))
 		if q_old < qb:
 			qbb = 2*qb-q_old
 		else:

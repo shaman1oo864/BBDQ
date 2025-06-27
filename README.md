@@ -27,7 +27,7 @@ pip install pandas
 I made an exe file for several bot configurations:
 1. pip install pyinstaller
 2. In the command line, go to the directory with the bot, for example, cd c:\1
-3.pyinstaller --onefile bbdq_h_BTC_30.py
+3. pyinstaller --onefile bbdq_h_BTC_30.py
 
 pyinstaller --onefile bbdq_h_ETH_30.py
 
